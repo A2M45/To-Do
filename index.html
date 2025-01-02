@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liste de Tâches Avancée</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Liste de Tâches Avancée</h1>
+        <div class="controls">
+            <input type="text" id="search" placeholder="Rechercher une tâche...">
+            <select id="filter-category">
+                <option value="Toutes">Toutes les catégories</option>
+                <option value="Travail">Travail</option>
+                <option value="Personnel">Personnel</option>
+                <option value="Autre">Autre</option>
+            </select>
+            <select id="filter-status">
+                <option value="Toutes">Toutes les tâches</option>
+                <option value="Terminées">Terminées</option>
+                <option value="Non terminées">Non terminées</option>
+            </select>
+        </div>
+        <form id="form-tache">
+            <input type="text" id="tache" placeholder="Ajouter une nouvelle tâche" required>
+            <select id="categorie">
+                <option value="Travail">Travail</option>
+                <option value="Personnel">Personnel</option>
+                <option value="Autre">Autre</option>
+            </select>
+            <button type="submit">Ajouter</button>
+        </form>
+        <ul id="liste-taches">
+            <!-- Les tâches seront affichées ici -->
+        </ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

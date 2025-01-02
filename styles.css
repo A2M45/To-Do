@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+.controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#search, #filter-category, #filter-status {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    flex-grow: 1;
+}
+
+#form-tache {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#form-tache input, #form-tache select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#form-tache button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#form-tache button:hover {
+    background-color: #218838;
+}
+
+#liste-taches {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#liste-taches li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #28a745;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#liste-taches li.complete {
+    border-left-color: #777;
+    opacity: 0.7;
+}
+
+#liste-taches li .categorie {
+    display: inline-block;
+    background-color: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-left: 10px;
+}
+
+#liste-taches li .actions {
+    display: flex;
+    gap: 5px;
+}
+
+#liste-taches li .actions button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#liste-taches li .actions button:hover {
+    background-color: #c82333;
+}
